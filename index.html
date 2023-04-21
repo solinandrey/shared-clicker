@@ -65,7 +65,7 @@
       document.querySelector('.counter').innerText = data.clicker;
     })
 
-    window.addEventListener('click', () => {
+    document.querySelector('body').addEventListener('click', () => {
       const quant = Number(document.querySelector('.counter').innerText);
       set(reference, {clicker: quant + 1});
     });
